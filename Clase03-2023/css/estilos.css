@@ -1,0 +1,37 @@
+
+/*Selector*/
+table, th , td/*etiquetas tercera especifidad*/
+{
+    border: 1px solid black;
+}
+
+table
+{
+    border-collapse: collapse;/*unifico los bordes*/
+}
+
+td
+{
+    /*padding: 10px; a todo diez de espacio*/
+    padding: 5px 10px;
+}
+
+thead
+{
+    background-color: aqua;
+}
+
+a > img
+{
+    height: 20px;
+}
+/*
+#tabla-materias id prioridad
+{
+    border-color: blue;
+}
+
+.verde clase segunda especificidad
+{
+    border-color: green;
+}*/
