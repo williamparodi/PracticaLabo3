@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/index.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+   <!-- <video src="./media/playa.mp4" controls></video>  -->
+   <form action="#"><!--es a donde me redirige, un cambio de pagina viaja una peticion get-->
+    <label for="txtNombre">Nombre:</label><!--etiqueta como en C# con  su nombre-->
+    <input type="text" name = "nombre" id="txtNombre"><!--es autocierre un textbox con el nombre del variable nombre y el id del label-->
+    <label for="txtMail">Email:</label>
+    <input type="text" name="email" id="txtMail"><!--es autocierre un textbox con el nombre del variable nombre y el id del label-->
+    <label for="txtEdad">Edad</label>
+    <input type="number" name="edad" id="txtEdad" min="18" max="65" value = "20">
+    <input type="color" name="color" id="txtcolor">
+    <input type="range" name="sa">
+    <input type="submit"> <!--es un boton-->
+   </form>
+</body>
+</html>
