@@ -6,7 +6,7 @@ a
 {
     /*saco el subrayado de los enlaces*/
     text-decoration: none;
-    color: white;
+    /*color: white;*/
 }
 
 header  
@@ -22,7 +22,7 @@ section
     padding: 5px;
 }
 
-.blanco
+.verde
 {
-    color: white;
+    color: green;
 }
