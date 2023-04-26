@@ -18,6 +18,30 @@
     <input type="color" name="color" id="txtcolor">
     <input type="range" name="sa">
     <input type="submit"> <!--es un boton-->
+    <label for="txtPassword">Password</label>
+    <input type="password" name="password" id="txtPassword" required><!--pone asteriscos en el txtbox de pass y required es para que sea necesario-->
+    <fieldset>
+        <legend>Deportes</legend>
+        <input type="checkbox" name="chkFutbol" value="f" checked />Futbol<br /><!---->
+        <input type="checkbox" name="chkTenis" value="t">Tenis<br />
+        <input type="checkbox" name="chkVoley" value="v">Voley<br />
+    </fieldset>
+    <fieldset>
+        <legend>Genero</legend>
+        <input type="radio" name="genero" checked  value="M"/>Masculino<br />
+        <input type="radio" name="genero" />Femenino<br />
+    </fieldset>
+        <input type="submit" value="Alta" />
+        <input type="file" name="archivo" id="seleciona">
+        <select name="" id="">
+            <option value="quilmes">Quilmes</option>
+            <option value="avellaneda" selected >Avellaneda</option><!--Aparace por defeault-->
+            <option value="bernal">Bernal</option>
+            <option value="lanus">Lanus</option>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+        </select>
+            
    </form>
+   <button id="btnClick">Clickme</button>
 </body>
 </html>
