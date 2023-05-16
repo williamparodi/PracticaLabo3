@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Clase Css</title>
+</head>
+<body>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        div
+        {
+            background-color: blue;
+            /*Tamaño*/
+            width: 200px;
+            height: 200px;
+            /*estilo de borde
+            border-width: 1px;
+            border-color: black;
+            border-style: solid;*/
+            /*border-style: solid; linea punteada*/
+
+            /*resumido en una sola linea*/
+            border: 10px solid black;
+            margin: 10px 20px 10px 20px;/*espacio arriba derechay  abajo izq respectivamente,en sentido reloj */
+            /*
+            margin-left: 30px;
+            margin-right: 30px;*/
+            padding: 10px;/*espacio dado alrededor del content box, se puede usar resumido tambien*/
+            /*padding-top: 40px; le doy espacio arriba solo.
+            box-sizing: border-box;/*esto es como se usa generalmente, el height y width se basan en el border-box*/
+            background-image: url(./img/1024px-Gran_Sabana_paisaje_1.jpg);
+            background-size: contain;/*rellena con la imagen al tamaño del elemento*/
+            background-repeat: no-repeat;/*para que no rellene con la imagen repetida*/
+            background-position: center;/*centro la imagen al elemento */
+            display: inline-block;/*los pongo uno al lado del otro y block me permite dar dimesion*/
+             
+        }
+        .rojo
+        {
+            background-color: red;
+            /*background-color: rgb(rgba(255, 0, 0, 0.216), green, blue) tambien mas colores*/
+            background-color: #FFFF00;/*por hexadecimal se puede buscar en la web
+        }
+        .dashed
+        {
+            border: 5px dashed blueviolet;/*linea punteada*/
+        }
+        #div3
+        {
+            background-color: yellowgreen;
+        } 
+    </style>
+    <div id="div1">
+        <p>Hola</p>
+    </div>
+    <div class="rojo dashed" id="div2"><!--le agrego dashed al div ademas de la clase roja-->
+        <p>Hola</p>
+    </div>
+    <div id="div3">
+        <p>Hola</p>
+    </div>
+    <p class="rojo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, quos!</p>
+</body>
+</html>

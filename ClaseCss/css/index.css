@@ -1,0 +1,26 @@
+div {
+    background-color: blue;
+    /*Tamaño*/
+    width: 200px;
+    height: 200px;
+    /*estilo de borde
+            border-width: 1px;
+            border-color: black;
+            border-style: solid;*/
+    /*border-style: solid; linea punteada*/
+
+    /*resumido en una sola linea*/
+    border: 1px solid black;
+}
+
+.rojo {
+    background-color: red;
+}
+
+.dashed {
+    border: 5px dashed blueviolet;
+}
+
+#div3 {
+    background-color: yellowgreen;
+}
