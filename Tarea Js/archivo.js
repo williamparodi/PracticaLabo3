@@ -32,30 +32,32 @@ function crearTabla(personas)
     const $body = document.createElement("tbody");
     const $nombresColumna = Object.keys(personas[0]);//trae los nombres de los atributos.
     const fragmento = document.createDocumentFragment();
-    fragmento.appendChild($thead);
+  
     $nombresColumna.forEach((elemento) => {
-      const $columna = document.createElement("th");
-      $columna.textContent = elemento;
-      $datos.appendChild($columna);
-      fragmento.appendChild($datos);      
+      const $columna = document.createElement("th");//creo un th para cada columna id,nombre, etc 
+      $columna.textContent = elemento; 
+      $datos.appendChild($columna);//agrego esos datos al tr
+      $thead.appendChild($datos);//agrego el tr al thead
+      fragmento.appendChild($thead);//agrego thead al fragmento      
     });
-    personas.forEach((persona) =>{
-      const $fila = document.createElement("tr");
-      $body.appendChild($fila);
-      $nombresColumna.forEach((elemento)=>{
-        const $valor = document.createElement("td");
-        $valor.textContent = persona[elemento];
-        $fila.appendChild($valor);
-        fragmento.appendChild($body);
+
+    personas.forEach((persona) =>{ 
+      const $fila = document.createElement("tr");//creo una fila ,un tr por persona
+      $body.appendChild($fila);//sumo al tbody una fila
+      $nombresColumna.forEach((elemento)=>{ 
+        const $valor = document.createElement("td");// creo un td con los valores 
+        $valor.textContent = persona[elemento]; //cada valor de cada elemento
+        $fila.appendChild($valor); //sumo el valor a la fila
+        fragmento.appendChild($body); //agrego el body al framento
       });
     });
-   
-    $tabla.appendChild(fragmento);
+    
+    $tabla.appendChild(fragmento);// agrego el fragmento a la tabla que contiene todo
     
     return $tabla;
 }
 
-const contenedor = document.querySelector(".tabla");
+const contenedor = document.querySelector(".tabla");// uso el query
 const tablita = crearTabla(listaPersonas);
 contenedor.appendChild(tablita);
 console.log(tablita);
