@@ -1,0 +1,31 @@
+.tabla
+{
+    display: inline-block;
+    background-color: black;
+    color: blue;
+    margin: 20px;
+    border: 1px solid black;
+}
+  
+
+table, th , td/*etiquetas tercera especifidad*/
+{
+    border: 1px solid black;
+}
+
+table
+{
+    border-collapse: collapse;/*unifico los bordes*/
+}
+
+td
+{
+    /*padding: 10px; a todo diez de espacio*/
+    padding: 5px 10px;
+}
+
+thead
+{
+    background-color: aqua;    
+}
+
