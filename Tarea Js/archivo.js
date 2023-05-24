@@ -17,11 +17,12 @@ const personas=[
   {"id":10,"first_name":"Craggie","last_name":"Barthelmes","email":"cbarthelmes9@nbcnews.com","gender":"Male"}];
   
 let listaPersonas = [];
+
 localStorage.setItem("listaPersonas",JSON.stringify(personas));
 
 if(localStorage.getItem("listaPersonas"))
 {
-    listaPersonas = [...JSON.parse(localStorage.getItem("listaPersonas"))];// si hay algo lo traigo     
+  listaPersonas = [...JSON.parse(localStorage.getItem("listaPersonas"))];// si hay algo lo traigo     
 }
 
 function crearTabla(personas)

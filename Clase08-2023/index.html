@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/scrips.js" type="module"></script>
+    <link rel="stylesheet" href="./css/estilos.css">
+    <title>Tabla en clase</title>
+</head>
+<body>
+    <header>
+        <h1>Crud Personas</h1>
+    </header>
+    <main>
+        <section class="seccion-formulario">
+            <h2>Alta Persona</h2>
+            <form>
+                <p>
+                    <input type="text" name="txtName" placeholder="Ingrese nombre" autocomplete="off">
+                </p>
+                <p>
+                    <input type="email" name="txtMail" placeholder="Ingrese mail" autocomplete="off">
+                </p>
+                <p>
+                    <input type="number" name="txtEdad" placeholder="Ingrese edad" min="18" max="65" value="18">
+                </p>
+                <fieldset>
+                    <legend>Genero</legend>
+                    <input type="radio" name="rdoGenero" value="Male">Male
+                    <br>
+                    <input type="radio" name="rdoGenero" value="Female" checked>Female
+                </fieldset>
+                <p>
+                    <input type="submit" name="Alta" value="Alta Persona">
+                    <input type="button" name="Eliminar" value="Eliminar Persona"/>
+                    <input type="hidden" name="txtId"/>
+                </p>
+            </form>
+        </section>
+        <section class="seccion-tabla">
+            <h2>Lista de Personas</h2>
+            <div id="tabla"></div>
+        </section> 
+    </main>
+</body>
+</html>

@@ -1,0 +1,26 @@
+.tabla,table,th,td
+{
+    border: 1px solid black;
+}
+  
+table
+{
+    border-collapse: collapse;/*unifico los bordes*/
+}
+
+td
+{
+    /*padding: 10px; a todo diez de espacio*/
+    padding: 5px 10px;
+}
+
+thead
+{
+    background-color: aqua;    
+}
+
+h1
+{
+    align-items: center;
+    display: inline-block;
+}

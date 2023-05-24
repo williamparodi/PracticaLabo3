@@ -1,0 +1,72 @@
+export const personas = [
+  {
+    id: 1,
+    nombre: "Wolfie",
+    apellido: "Denson",
+    email: "wdenson0@privacy.gov.au",
+    genero: "Male",
+  },
+  {
+    id: 2,
+    nombre: "Roobbie",
+    apellido: "Keysall",
+    email: "rkeysall1@qq.com",
+    genero: "Female",
+  },
+  {
+    id: 3,
+    nombre: "Mervin",
+    apellido: "Collington",
+    email: "mcollington2@tamu.edu",
+    genero: "Male",
+  },
+  {
+    id: 4,
+    nombre: "Scottie",
+    apellido: "Srutton",
+    email: "ssrutton3@tamu.edu",
+    genero: "Male",
+  },
+  {
+    id: 5,
+    nombre: "Aidan",
+    apellido: "Havvock",
+    email: "ahavvock4@netvibes.com",
+    genero: "Female",
+  },
+  {
+    id: 6,
+    nombre: "Delphinia",
+    apellido: "Brownlow",
+    email: "dbrownlow5@zdnet.com",
+    genero: "Female",
+  },
+  {
+    id: 7,
+    nombre: "Gabi",
+    apellido: "Flemming",
+    email: "gflemming6@angelfire.com",
+    genero: "Genderqueer",
+  },
+  {
+    id: 8,
+    nombre: "Hirsch",
+    apellido: "Inman",
+    email: "hinman7@bbc.co.uk",
+    genero: "Male",
+  },
+  {
+    id: 9,
+    nombre: "Parnell",
+    apellido: "Atherton",
+    email: "patherton8@skyrock.com",
+    genero: "Male",
+  },
+  {
+    id: 10,
+    nombre: "Yorke",
+    apellido: "Stent",
+    email: "ystent9@hao123.com",
+    genero: "Male",
+  }
+];
