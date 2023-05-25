@@ -65,13 +65,12 @@ const crearCuerpo = (data) =>
 
 //agrego a todo el navegador el click, aca programo los manejador es mas eficiente
 
-
 //limpio la tabla y la acyualiza
 export const actualizarTabla = (contenedor,data)=>
 {
     while(contenedor.hasChildNodes())//mientras tenga hijos
     {
-        contenedor.removeChild(contenedor.firstElementchild);
+        contenedor.removeChild(contenedor.firstElementChild);
     }
     contenedor.appendChild(crearTabla(data,"coral"));
 }

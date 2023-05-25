@@ -2,25 +2,28 @@
 //import {personas as people} from "../data/lista.js";
 import {actualizarTabla} from "../js/tabla.js";
 
-import {crearTabla} from "../js/tabla.js";
+//import {crearTabla} from "../js/tabla.js";
 import {Persona} from "../persona.js";
 
+//ees mas eficiente no tira eventos en vano 
 window.addEventListener("click",(e) =>
 {
    if(e.target.matches("td"))//si el emisor del evento matchea con una td
    {
-        const id = e.target.parentElement.getAttribute("data-id");
+        //const id = e.target.parentElement.getAttribute("data-id");
+        const id = e.target.parentElement.dataset.id;
         console.log(id);
 
-        const selectedPersona = personas.find((per)=>{ //voy a tener la persona q selecciono
-            return per.id === id;
-        });
-
+        const selectedPersona = personas.find((per)=> per.id == id); //voy a tener la persona q selecciono es una arrow function
+            //return per.id == id;
+        
+        //console.log(selectedPersona);
         cargarFormPersona($formulario,selectedPersona);
    }
-   else if(e.target.matches("button[value='Eliminar Persona']"))
+   else if(e.target.matches("input[value='Eliminar Persona']"))
    {
-        const id = parseInt($formulario.txtId);
+        console.log("eliminar");//podria usar una ventana confirm
+        const id = parseInt($formulario.txtId.value);
         handlerDelete(id);
    }  
    
@@ -29,7 +32,7 @@ window.addEventListener("click",(e) =>
 //localStorage.setItem("personas",JSON.stringify(people));
 const personas = JSON.parse(localStorage.getItem("personas")) ||[]; //si devuelve null, devuelvo array vacio
 const $seccionTabla = document.getElementById("tabla");
-const $formulario = document.forms[0];
+const $formulario = document.forms[0];// o getElementById
 
 //si existe actualiza
 if(personas.length)
@@ -46,20 +49,22 @@ $formulario.addEventListener("submit",(e)=>
     //podria validar antes de esto
     const {txtId,txtName,txtEdad,txtEmail,rdoGenero} = $formulario;//tiene atributos los nombres de los botones,etc
 
-    if(txtId.value == "")//va a ser persona nueva
+    if(txtId.value === "")//va a ser persona nueva
     {
         //personanueva
+        console.log("Nueva");
         const newPersona = new Persona(Date.now(),txtName.value,parseInt(txtEdad.value),txtEmail.value,rdoGenero.value);
         handlerCreate(newPersona);
     }
     else
     {
         //modificar/Update persona
+        console.log("update");
         const updatedPersona = new Persona(parseInt(txtId.value),txtName.value,parseInt(txtEdad.value),txtEmail.value,rdoGenero.value);
         handlerUpdate(updatedPersona);
     }
 
-    $formulario.reset();//limpoi el form 
+    $formulario.reset();//limpo el form 
     
 });
 
@@ -76,8 +81,8 @@ function handlerUpdate(editPersona)
     let index = personas.findIndex((per)=> per.id == editPersona.id);//encuentra la direccion
 
     //piso la persona a editar con los datos nuevos
-    personas.splice(index,1,editPersona);//corta y emboca la nueva
-
+    personas.splice(index,1,editPersona);//corta y emboca la modificada
+    //podria hacer un sort para acomodar
     actualizarStorage("personas",personas);
     actualizarTabla($seccionTabla,personas);
 }
