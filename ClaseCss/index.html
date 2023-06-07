@@ -9,6 +9,22 @@
 </head>
 <body>
     <style>
+        body
+        {
+            display: flex;
+            flex-direction: column;/*columnas flexibles*/
+            flex-direction: row-reverse;/*de derecha izq a */
+            flex-wrap: wrap;/*respeta el tamaño de width y height y divide los elementos en el espacio*/
+            justify-content: center;/*las centra y deja los espacios a los costados*/
+            justify-content: space-between; /*distrubuye entre los elementos el espacio*/
+            justify-content: space-around;/*se distribuye el espacio*/
+            justify-content: space-evenly;/*se distibuye equitativamente*/
+            align-items: center;/*centro dentro del rowflex el contenido*/
+            align-items: flex-end;/*alinea al final del rowflex*/
+            align-items: flex-start;/*arriba del rowflex*/
+            align-content: center;/*alinea al medio las rowflex*/
+
+        }
         *{
             padding: 0;
             margin: 0;
@@ -54,16 +70,26 @@
         #div3
         {
             background-color: yellowgreen;
+            position: relative;/*posicionamiento*/
+            top: 100px;
+            /*position: fixed; se fija en la pantalla
+            position: sticky; se queda en la posicion
+            top: 0; */
         } 
+        
     </style>
-    <div id="div1">
+    <div id="div1" style="order: 5;">
         <p>Hola</p>
     </div>
-    <div class="rojo dashed" id="div2"><!--le agrego dashed al div ademas de la clase roja-->
+    <div class="rojo dashed" id="div2" style="order: 6"><!--le agrego dashed al div ademas de la clase roja-->
         <p>Hola</p>
     </div>
-    <div id="div3">
+    <div id="div3" style="order: 2;">
+        div2
         <p>Hola</p>
+    </div>
+    <div style="order: 4;">div2</div>>
+
     </div>
     <p class="rojo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, quos!</p>
 </body>

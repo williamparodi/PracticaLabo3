@@ -30,6 +30,7 @@ header
     justify-content: center;
 }
 
+
 .seccion-formulario, .seccion-tabla
 {
     display: flex;

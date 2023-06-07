@@ -14,9 +14,16 @@ header
     background: url(images/header.jpg);
     width: 1900px;
     height: 1000px;
-    padding: auto;  
+    padding: auto; 
+    
 }
 
+.nosotros
+{
+    display: flex;
+    flex-direction: row;
+
+}
 section
 {
     padding: 5px;
@@ -26,3 +33,5 @@ section
 {
     color: green;
 }
+
+
