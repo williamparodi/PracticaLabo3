@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <!--Form-->
+    <div class="container">
+      <!-- Se establece por defecto el style de la letra y hago que p se muestre como h1-->
+      <h1>Hola Mundo</h1>
+      <p class="h1">Hola mundo</p>
+      <!-- Hay cuatro tamaños de display, cambio tamaño -->
+      <h1 class="display-1">Hola Mundo</h1>
+      <p class="display-1">Hola mundo</p>
+      <p>Hola Mundo</p>
+      <p class="small">Hola mundo small</p>
+      <!-- Le saca stylo por default y sangria esta bueno para hacer un nav-->
+      <ul class="list-unstyled">
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+        <li>item4</li>
+        <li>item5</li>
+      </ul>
+      <!-- linea divisoria hr-->
+      <hr/>
+      <!--esta bueno para hacer un nav vertical-->
+      <ul class="list-inline">
+        <li class="list-inline-item">item1</li>
+        <li class="list-inline-item">item2</li>
+        <li class="list-inline-item">item3</li>
+        <li class="list-inline-item">item4</li>
+        <li class="list-inline-item">item5</li>
+      </ul>
+      <hr/>
+      <!-- Le agrega estilos a la cita blockquote y le agrego text-right o text-center o jsutyfy-->
+      <blockquote class="blockquote text-center">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate rem
+        non, assumenda dignissimos, laboriosam eum necessitatibus blanditiis
+        facere laudantium magnam obcaecati accusamus incidunt! Nisi aspernatur
+        sunt id sit assumenda mollitia. Molestias similique eius qui autem alias
+        quod accusantium repellendus pariatur mollitia. Autem nemo cumque sit
+        sed ducimus maiores fuga quidem eveniet fugiat omnis odit blanditiis
+        dolore ad vel, minima ab. Laboriosam error porro modi veritatis
+        voluptatum, necessitatibus, delectus, laudantium maiores quasi natus
+        animi nihil perferendis dolor tempore voluptas ut. Quisquam sint
+        praesentium provident necessitatibus expedita libero? Nam iusto
+        recusandae quasi. Quis iure cupiditate autem tempora illum neque,
+        repellendus eligendi saepe natus rem inventore fugiat asperiores
+        reiciendis pariatur quas repudiandae, itaque, amet ex ullam excepturi
+        sequi eaque. Minus, tempore doloribus. Delectus. Distinctio soluta
+        nesciunt suscipit quam libero provident doloremque quae excepturi
+        repellat at eum dolore unde dolor ullam voluptatem incidunt nam quod eos
+        temporibus iste, sed deleniti. Nesciunt totam perferendis deserunt.
+        <footer class="blockquote-footer">Referencia la fuente <cite>xxxxxxxxx</cite></footer>
+      </blockquote>
+      <!-- resalta un texto -->
+      <p class="mark">esto es un parrafo</p>
+
+      <!-- Para firmas -->
+      <abbr title="Señor" class="initialize">Sr.</abbr>
+      <abbr title="Universidad Tecnologica Nacional" class="initialize">UTN</abbr>.</abbr>
+      <hr>
+
+      <code>
+        console.log("Hola");
+      </code>
+
+      <!-- Tiene que tener una ventana scrollable y no la tiene -->
+      <pre class="pre-scrollable"><code>
+        let btnDesordenar =document.querySelector("#btnDesordenar");
+
+        btnDesordenar.addEventListener("click",()=>{
+        //console.log("Hola");
+        let columnas = document.querySelectorAll(".container>div:first-child>div.col");          
+        columnas[0].classList.add("order-3");
+        columnas[1].classList.add("order-1");
+        columnas[2].classList.add("order-2");
+        columnas[2].classList.add("order-2");
+        columnas[0].classList.add("order-3");
+        columnas[1].classList.add("order-1");
+        columnas[2].classList.add("order-2");
+        columnas[0].classList.add("order-3");
+        columnas[1].classList.add("order-1");
+        columnas[2].classList.add("order-2");
+        columnas[0].classList.add("order-3");
+        columnas[1].classList.add("order-1");
+        columnas[2].classList.add("order-2");
+        columnas[0].classList.add("order-3");
+        columnas[1].classList.add("order-1");
+        columnas[2].classList.add("order-2");
+        columnas[0].classList.add("order-3");
+        columnas[1].classList.add("order-1");
+        columnas[2].classList.add("order-2");
+        columnas[0].classList.add("order-3");
+        columnas[1].classList.add("order-1");
+        columnas[2].classList.add("order-2");
+        columnas[0].classList.add("order-3");
+        columnas[1].classList.add("order-1");
+        columnas[2].classList.add("order-2");
+        columnas[0].classList.add("order-3");
+        columnas[1].classList.add("order-1");
+        columnas[2].classList.add("order-2");
+        columnas[0].classList.add("order-3");
+        columnas[1].classList.add("order-1");
+        columnas[0].classList.add("order-3");
+        columnas[1].classList.add("order-1");
+        columnas[2].classList.add("order-2");
+        columnas[0].classList.add("order-3");
+        columnas[1].classList.add("order-1");
+        columnas[2].classList.add("order-2");
+        columnas[0].classList.add("order-3");
+        columnas[1].classList.add("order-1");
+        columnas[2].classList.add("order-2");
+        columnas[0].classList.add("order-3");
+        columnas[1].classList.add("order-1");
+        columnas[2].classList.add("order-2");
+        columnas[0].classList.add("order-3");
+        columnas[1].classList.add("order-1");
+        columnas[2].classList.add("order-2");
+        columnas[0].classList.add("order-3");
+        columnas[1].classList.add("order-1");
+        columnas[2].classList.add("order-2");
+        columnas[0].classList.add("order-3");
+        columnas[1].classList.add("order-1");
+        columnas[2].classList.add("order-2");
+        columnas[0].classList.add("order-3");
+        columnas[1].classList.add("order-1");
+        columnas[2].classList.add("order-2");
+        columnas[0].classList.add("order-3");
+        columnas[1].classList.add("order-1");
+        columnas[0].classList.add("order-3");
+        columnas[1].classList.add("order-1");
+        columnas[2].classList.add("order-2");
+        columnas[0].classList.add("order-3");
+        columnas[1].classList.add("order-1");
+        columnas[2].classList.add("order-2");
+        columnas[0].classList.add("order-3");
+        columnas[1].classList.add("order-1");
+        columnas[2].classList.add("order-2");
+        columnas[0].classList.add("order-3");
+        columnas[1].classList.add("order-1");
+        columnas[2].classList.add("order-2");
+        columnas[0].classList.add("order-3");
+        columnas[1].classList.add("order-1");
+        columnas[2].classList.add("order-2");
+        columnas[0].classList.add("order-3");
+        columnas[1].classList.add("order-1");
+        columnas[2].classList.add("order-2");
+        columnas[0].classList.add("order-3");
+        columnas[1].classList.add("order-1");
+        columnas[2].classList.add("order-2");
+        columnas[0].classList.add("order-3");
+        columnas[1].classList.add("order-1");
+        columnas[2].classList.add("order-2");
+        columnas[0].classList.add("order-3");
+        columnas[1].classList.add("order-1");
+        columnas[0].classList.add("order-3");
+        columnas[1].classList.add("order-1");
+        columnas[2].classList.add("order-2");
+        columnas[0].classList.add("order-3");
+        columnas[1].classList.add("order-1");
+        columnas[2].classList.add("order-2");
+        columnas[0].classList.add("order-3");
+        columnas[1].classList.add("order-1");
+        columnas[2].classList.add("order-2");
+        columnas[0].classList.add("order-3");
+        columnas[1].classList.add("order-1");
+        columnas[2].classList.add("order-2");
+        columnas[0].classList.add("order-3");
+        columnas[1].classList.add("order-1");
+        columnas[2].classList.add("order-2");
+        columnas[0].classList.add("order-3");
+        columnas[1].classList.add("order-1");
+        columnas[2].classList.add("order-2");
+        columnas[0].classList.add("order-3");
+        columnas[1].classList.add("order-1");
+        columnas[2].classList.add("order-2");
+        columnas[0].classList.add("order-3");
+        columnas[1].classList.add("order-1");
+        columnas[2].classList.add("order-2");
+        columnas[0].classList.add("order-3");
+        columnas[1].classList.add("order-1");
+        columnas[0].classList.add("order-3");
+        columnas[1].classList.add("order-1");
+        columnas[2].classList.add("order-2");
+        columnas[0].classList.add("order-3");
+        columnas[1].classList.add("order-1");
+        columnas[2].classList.add("order-2");
+        columnas[0].classList.add("order-3");
+        columnas[1].classList.add("order-1");
+        columnas[2].classList.add("order-2");
+        columnas[0].classList.add("order-3");
+        columnas[1].classList.add("order-1");
+        columnas[2].classList.add("order-2");
+        columnas[0].classList.add("order-3");
+        columnas[1].classList.add("order-1");
+        console.log(columnas);
+})</code>
+      </pre> 
+    </div>
+  </body>
+</html>

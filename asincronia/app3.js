@@ -4,7 +4,6 @@ function sumar(a,b)
 {
     return new Promise((resolve,reject)=>
     {
-
         setTimeout(() =>{
             
                 if(typeof a === "number" && typeof b === "number")
